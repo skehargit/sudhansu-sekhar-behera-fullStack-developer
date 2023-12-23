@@ -10,7 +10,6 @@
 <!-- I love making pretty and useful websites. Excited to tackle new challenges in web design. Let's build something awesome! -->
 <body>
     <header>
-        <a href="" class="logo"><span>s</span></a>
         <ul class="navbar">
             <li><a href="" class="active">home</a></li>
             <li><a href="">about</a></li>
@@ -18,24 +17,87 @@
             <li><a href="">interest</a></li>
             <li><a href="">contact</a></li>
         </ul>
-        <div class="menu-btn">
-            <span>#</span>
-        </div>
     </header>
     <section class="home">
         <div class="home-text">
-            <span>hi,i am a</span>
-            <h1>fullstack developer</h1>
+            <span>Hi, I am a</span>
+            <h1>
+                <div>
+                    <span class="char">F</span>
+                    <span class="char">u</span>
+                    <span class="char">l</span>
+                    <span class="char">l</span>
+                    <span class="char">s</span>
+                    <span class="char">t</span>
+                    <span class="char">a</span>
+                    <span class="char">c</span>
+                    <span class="char">k</span>
+                    <sup>MERN STACK</sup>
+                </div>
+                <div>
+                    <span class="char">D</span>
+                    <span class="char">e</span>
+                    <span class="char">v</span>
+                    <span class="char">e</span>
+                    <span class="char">l</span>
+                    <span class="char">o</span>
+                    <span class="char">p</span>
+                    <span class="char">e</span>
+                    <span class="char">r</span>
+                </div>
+                 
+            </h1>
             <p>I love making pretty and useful websites. Excited to tackle new challenges in web design. Let's build something awesome!</p>
             <div class="main-btn">
                 <a href="" class="btn">about me</a>
                 <a href="" class="btn">resume</a>
             </div>
+            <div class="social">
+            </div>
         </div>
         <div class="home-img">
-            <img src="img/portfolio-dp1.jpg" alt="">
+            <div class="circle1">
+                <span><img src="img/icons8-mongodb-a-cross-platform-document-oriented-database-program-48.png" alt="mongoDb img"></span>
+                <span><img src="img/icons8-express-js-48.png" alt="express img"></span>
+                <span><img src="img/icons8-react-native-48.png" alt="react img"></span>
+                <span><img src="img/icons8-node-js-48.png" alt="node-js img"></span>
+            </div>
+            <div class="circle2">
+
+            </div>
+            <img src="img/portfolio-dp1.jpg" alt="profile img">
         </div>
 
     </section>
+    <section class="about">
+
+
+
+    </section>
+
+    <script>
+        let char=document.querySelectorAll('.char');
+        
+        // console.log(n,n2);
+        setInterval(()=>{
+            let n=Math.floor(Math.random()*char.length);
+            let n2=Math.floor(Math.random()*char.length);
+            char[n].classList.toggle("rubberBand");
+            char[n2].classList.toggle("rubberBand");
+            char[Math.abs(n-n2)].classList.toggle("rubberBand");
+            char[Math.abs(n2-n)].classList.toggle("rubberBand");
+            char[Math.ceil(n/2)].classList.toggle("rubberBand");
+            char[Math.ceil(n2/2)].classList.toggle("rubberBand");
+            // console.log(n,n2,Math.abs(n-n2),Math.abs(n2-n))
+        },500);   
+        for (let i = 0; i < char.length; i++) {
+            char[i].addEventListener("mouseenter", (e)=> {
+                    char[i].classList.add("rubberBand");
+            });
+            char[i].addEventListener("animationend", (e) =>{
+                    char[i].classList.remove("rubberBand");
+            });
+        }
+    </script>
 </body>
 </html>
