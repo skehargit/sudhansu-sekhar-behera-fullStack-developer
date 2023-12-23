@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,900&display=swap');
+*{
+	font-family: 'Source Sans Pro', sans-serif;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0)!important;
+	-webkit-focus-ring-color:rgba(255,255,255,0);
+	outline: none !important;
+}
+html{
+    scroll-behavior: smooth;
+    /* font-size: 80%; */
+}
+body{
+    background: black;
+    color: white;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 15%;
+    background: transparent;
+    transition: all ease .5s;
+    color: white;
+}
+.logo,header ul li a{
+    color: white;
+    transition: all ease .5s;
+}
+header ul li a:hover{
+ color: green;
+}
+header ul li a.active{
+    color: green;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* justify-content: center; */
+}
+header ul li{
+    list-style: none;
+}
+section{
+    padding: 0 15%;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.home-img{
+    width: 700px;
+    height: 700px;
+}
+.home-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.home-text span{
+    padding: 5px 25px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.home-text h1{
+    font-size: 7rem;
+    margin: 23px 0;
+}
+.home-text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+@media (max-width:1850px){
+    header{
+        padding: 15px 8%;
+        transition: .3s;
+    }
+    section{
+        padding: 0 8%;
+        transition: .3s;
+    }
+
+}
+@media (max-width:1370px){
+    header{
+        padding: 15px 4%;
+        transition: .3s;
+    }
+    section{
+        padding: 0 4%;
+        transition: .3s;
+    }
+    .home-text h1{
+        font-size: 5rem;
+    }
+    
+}
+@media (max-width:1020px){
+    .navbar a{
+        margin: 0 15px;
+
+    }
+    .home-text h1{
+        font-size: 4.5rem;
+    }
+    
+}
+@media (max-width:800px){
+    .home{
+        margin-top: 45px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .home-text{
+        order: 2;
+    }
+    .home-img{
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    .home-img img{
+        max-width: 450px;
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+
