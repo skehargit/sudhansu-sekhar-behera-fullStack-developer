@@ -24,9 +24,9 @@ header{
     background: rgba(255, 255, 255, 0.037);
     border-radius: 50px;
     top: 5px;
-    width: 50%;
-    min-width: 400px;
-    max-width: 500px;
+    width: 100%;
+    /* min-width: 400px; */
+    max-width: 450px;
     z-index: 100;
     display: flex;
     align-items: center;
@@ -149,6 +149,12 @@ section{
     width: 70%;
     height: 70%;
 }
+.home-img:hover .circle1{
+    animation: rotate 5s infinite linear;
+}
+.home-img:hover .circle1 span{
+    animation: childrorate 5s infinite linear;
+}
 .home-img .circle2{
     position: absolute;
     border: 1px solid rgb(255, 255, 255);
@@ -157,24 +163,46 @@ section{
     border-radius: 50%;
     border-bottom: 1px solid transparent;
     border-top: 1px solid transparent;
-    animation: childrorate 10s infinite linear;
+    animation: childrorate 5s infinite linear;
 
 }
+.home-img:hover .circle2{
+    animation: childrorate 1s infinite linear;
+}
+/* .home-img .circle2:hover{
+    animation: childrorate 1s infinite linear;
+} */
 .home-img img{
     position: absolute;
     width: 330px;
     height: 330px;
     border-radius: 50%;
+    transition: all .5s;
     
 }
 .home-img img:hover{
-    transition: all 0.2s ease-out;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .home-text span{
     font-weight: 700;
     font-size: 30px;
     font-family: sans-serif;
+}
+.home-text .hi-text img{
+    width: 30px;
+    margin-left: 5px;
+    animation: wave-animation .4s infinite linear;
+}
+@keyframes wave-animation{
+    0%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-10deg);
+    }
 }
 .home-text h1 div{
     display: flex;
@@ -232,11 +260,8 @@ section{
     font-family: sans-serif;
     font-size: 15px;
     color: green;
-    /* animation: zig 3s infinite linear; */
-    /* transition: 5s; */
-    /* border: 1px solid red; */
     border-top: 1px solid white;
-    padding: 10px;
+    padding: 2px;
 }
 @keyframes zig{
     0%{
@@ -312,15 +337,31 @@ section{
     transition: 0s;
     transform: translate(0, 5%);
   }
+  .social{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top: -35px;
+    padding: 10px;
+
+  }
+  .social a img{
+    width: 30px;
+    transition: .5s;
+  }
+  .social a img:hover{
+    opacity: 0.2;
+    border: 2px solid white;
+    padding: 3px;
+    border-radius: 50%;
+  }
 .about{
     height: 100vh;
     width: 100vw;
 }
 @media (max-width:1850px){
-    /* header{
-        padding: 15px 8%;
-        transition: .3s;
-    } */
     section{
         padding: 0 8%;
         transition: .3s;
@@ -328,10 +369,6 @@ section{
 
 }
 @media (max-width:1370px){
-    /* header{
-        padding: 15px 4%;
-        transition: .3s;
-    } */
     section{
         padding: 0 4%;
         transition: .3s;
@@ -359,16 +396,15 @@ section{
     
 }
 @media (max-width:1020px){
-    /* .navbar a{
-        margin: 0 15px;
-
-    } */
     .home-text h1 span{
         font-size: 4.5rem;
     }
     
 }
 @media (max-width:950px){
+    /* header{
+        max-width: 400px;
+    } */
     header ul{
         gap: 10px;
     }
@@ -381,16 +417,29 @@ section{
         flex-wrap: wrap;
     }
     .home-text{
-        margin-top: 30px;
+        /* margin-top: 0px; */
         order: 2;
+    }
+    .home-text h1 span{
+        font-size: 4rem;
     }
     .home-img{
         margin: auto;
         height: 350px;
-        /* padding: 0; */
     }
     
     
+}
+@media (max-width:500px){
+    .home-text h1 span{
+        font-size: 3.5rem;
+    }
+    .social{
+        position: relative;
+        top: 30px;
+        justify-content: flex-start;
+        padding: 10px;
+      }
 }
 
 
