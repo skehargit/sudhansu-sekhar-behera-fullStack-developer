@@ -402,9 +402,6 @@ section{
     
 }
 @media (max-width:950px){
-    /* header{
-        max-width: 400px;
-    } */
     header ul{
         gap: 10px;
     }
@@ -412,16 +409,18 @@ section{
         font-size: .8rem;
     }
     .home{
-        margin-top: 50px;
+        /* margin-top: 50px; */
+        margin-top: 10px;
         display: flex;
         flex-wrap: wrap;
+        align-items: normal;
+        gap: 0;
     }
     .home-text{
-        /* margin-top: 0px; */
         order: 2;
     }
     .home-text h1 span{
-        font-size: 4rem;
+        font-size: 8rem;
     }
     .home-img{
         margin: auto;
@@ -430,9 +429,14 @@ section{
     
     
 }
-@media (max-width:500px){
+@media (max-width:600px){
     .home-text h1 span{
-        font-size: 3.5rem;
+        font-size: 6rem;
+    }
+}
+@media (max-width:550px){
+    .home-text h1 span{
+        font-size: 5.7rem;
     }
     .social{
         position: relative;
@@ -440,6 +444,74 @@ section{
         justify-content: flex-start;
         padding: 10px;
       }
+}
+@media (max-width:500px){
+    .home-text h1 span{
+        font-size: 5rem;
+    }
+    .social{
+        position: relative;
+        top: 30px;
+        justify-content: flex-start;
+        padding: 10px;
+      }
+}
+@media (max-width:450px){
+    .home{
+        margin-top: 30px;
+    }
+    .home-text h1 span{
+        font-size: 4rem;
+    }
+}
+@media (max-width:380px){
+    .home{
+        margin-top: 40px;
+    }
+    .home-text h1 span{
+        font-size: 3.7rem;
+    }
+}
+@media (max-width:300px){
+    
+    header{
+        position: fixed;
+        border-radius: 0;
+    }
+    header ul{
+        gap: 9px;
+    }
+    header ul li a{
+        font-size: .6rem;
+    }
+    .home-text h1 span{
+        font-size: 3rem;
+    }
+    .home-text h1 div sup{
+        font-size: 8px;
+    }
+    .home-img{
+        /* margin: auto; */
+        margin-top: 10px;
+        height: 250px;
+    }
+    .home-img img{
+        width: 150px;
+        height: 150px;
+        
+    }
+    .home-img .circle1{
+        width: 230px;
+        height: 230px;
+    }
+    .home-img .circle1 span{
+        width: 30px;
+        height: 30px;
+    }
+    .home-img .circle2{
+        width: 180px;
+        height: 180px;
+    }
 }
 
 
