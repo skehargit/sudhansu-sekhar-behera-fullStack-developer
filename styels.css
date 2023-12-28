@@ -21,7 +21,7 @@ header{
     position: fixed;
     border: 1px solid rgba(255, 255, 255, 0.299);
     backdrop-filter: blur(8px);
-    background: rgba(255, 255, 255, 0.037);
+    /* background: rgba(255, 255, 255, 0.037); */
     border-radius: 50px;
     top: 5px;
     width: 100%;
@@ -32,12 +32,40 @@ header{
     align-items: center;
     justify-content: center;
     /* padding: 30px 15%; */
-    padding: 15px;
+    padding: 15px 0;
     background: transparent;
     transition: all ease .5s;
     color: white;
     transform: translate(-50%);
     left: 50%;
+    /* height: 100vh; */
+    
+    
+}
+#starting-animation{
+    /* border: 1px solid red; */
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: 0;
+    backdrop-filter: blur(10px);
+    /* border: 1px solid white; */
+    background: transparent;
+    z-index: 101;
+    width: 100vw;
+    border-radius: 0 0 50% 50%;
+    animation: starting-animation .6s  linear ;
+}
+@keyframes starting-animation{
+    0%{
+        height: 200vh;
+        width: 100vw;
+        border-bottom: 1px solid white;
+    }
+    100%{
+        height: 0;
+        border-bottom: none;
+    }
 }
 header ul{
     display: flex;
@@ -167,7 +195,7 @@ section{
 
 }
 .home-img:hover .circle2{
-    animation: childrorate 1s infinite linear;
+    animation: childrorate 3s infinite linear;
 }
 /* .home-img .circle2:hover{
     animation: childrorate 1s infinite linear;
@@ -410,7 +438,7 @@ section{
     }
     .home{
         /* margin-top: 50px; */
-        margin-top: 10px;
+        /* margin-top: 10px; */
         display: flex;
         flex-wrap: wrap;
         align-items: normal;
@@ -423,11 +451,15 @@ section{
         font-size: 8rem;
     }
     .home-img{
-        margin: auto;
+        /* margin: auto; */
+        margin: 40px auto 0 auto;
         height: 350px;
     }
-    
-    
+}
+@media (max-width:800px){
+    .home-text h1 span{
+        font-size: 7rem;
+    }
 }
 @media (max-width:600px){
     .home-text h1 span{
@@ -470,6 +502,20 @@ section{
     }
     .home-text h1 span{
         font-size: 3.7rem;
+    }
+}
+@media (max-width:350px){
+    header{
+        border-radius: 0;
+    }
+    .home-text h1 span{
+        font-size: 3.3rem;
+    }
+    header ul{
+        gap: 10px;
+    }
+    header ul li a{
+        font-size: .6rem;
     }
 }
 @media (max-width:300px){
