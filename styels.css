@@ -536,8 +536,9 @@ ul, li{
     font-family: sans-serif;
     line-height: 1.5;
     margin-top:0.4rem;
-    /* position: relative;
-    z-index: 2; */
+  }
+  .education p{
+    text-transform: capitalize;
   }
 .skills{
     height: 100vh;
