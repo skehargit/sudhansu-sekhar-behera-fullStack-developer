@@ -297,8 +297,15 @@ section{
     font-size: 15px;
     font-weight: 400;
     line-height: 30px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     font-family: sans-serif;
+}
+.homelinks{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
 }
 .btn {
     padding: 15px 20px;
@@ -363,11 +370,6 @@ section{
     display: flex;
     gap: 15px;
     align-items: center;
-    justify-content: flex-end;
-    position: relative;
-    top: -35px;
-    padding: 10px;
-
   }
   .social a img{
     width: 30px;
@@ -391,6 +393,7 @@ section{
 }
 .about .about_card .about_card_img{
     position: relative;
+    
 }
 .about .about_card .about_card_img img{
     width: 200px;
@@ -503,9 +506,10 @@ ul, li{
     }
   }
   .wrapper ul li:hover::after{
-    width:50%;
+    /* width:50%; */
     height: 20px;
-    border-radius: 0;
+    width: 20px;
+    /* border-radius: 0; */
 
   }
   .course{
@@ -604,6 +608,13 @@ ul, li{
     .about{
         flex-direction: column;
     }
+    .about .about_card{
+        border: 1px solid white;
+        padding: 10px;
+        width: 220px;
+        position: relative;
+        margin-right: 0;
+    }
 }
 @media (max-width:800px){
     .home-text h1 span{
@@ -616,26 +627,28 @@ ul, li{
     }
 }
 @media (max-width:550px){
+    
     .home-text h1 span{
         font-size: 5.7rem;
     }
-    .social{
-        position: relative;
-        top: 30px;
-        justify-content: flex-start;
-        padding: 10px;
+    .btn {
+        padding: 10px 15px;
+        font-size: .6rem;
       }
+      
+      .btn::after {
+        width: 25px;
+        height: 25px;
+      }
+      
+    .social a img{
+        width: 20px;
+    }
 }
 @media (max-width:500px){
     .home-text h1 span{
         font-size: 5rem;
     }
-    .social{
-        position: relative;
-        top: 30px;
-        justify-content: flex-start;
-        padding: 10px;
-      }
 }
 @media (max-width:450px){
     .home{
@@ -643,6 +656,24 @@ ul, li{
     }
     .home-text h1 span{
         font-size: 4rem;
+    }
+    .btn {
+        padding: 10px 11px;
+        font-size: .5rem;
+    }
+      
+    .btn::after {
+        width: 20px;
+        height: 20px;
+    }
+    .social a img{
+        width: 15px;
+    }
+    .homelinks{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        /* border: 1px solid red; */
     }
 }
 @media (max-width:380px){
@@ -652,6 +683,7 @@ ul, li{
     .home-text h1 span{
         font-size: 3.7rem;
     }
+    
 }
 @media (max-width:350px){
     header{
