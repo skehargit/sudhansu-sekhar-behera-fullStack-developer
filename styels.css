@@ -531,6 +531,115 @@ ul, li{
   .education p{
     text-transform: capitalize;
   }
+  /* ============== skill div start ============ */
+  .skill{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.skill .box{
+    border: 1px solid rgba(207, 207, 207, 0.206);
+    padding: 10px;
+    font-family: sans-serif;
+    border-radius: 50px;
+}
+.skill div{
+    position: absolute;
+}
+.skill .box2{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.301); 
+    animation: rotate-left 15s linear infinite;
+}
+@keyframes rotate-left{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.skill .box2 .small_box{
+    animation: rotate-right 15s linear infinite;
+}
+.skill .box3{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.301);
+    animation: rotate-right 15s linear infinite; 
+}
+@keyframes rotate-right{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.skill .box3 .small_box{
+    animation: rotate-left 15s linear infinite;
+}
+.small_box{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.small_box img{
+    width: 60%;
+}
+.box-1{
+    right: 0;
+}
+.box-2{
+    bottom: 0;
+}
+.box-3{
+    top: 0;
+}
+.box-4{
+    bottom: 0;
+    right: 0;
+}
+.box-5{
+    left: 4%;
+    top: 4%;
+}
+.box-6{
+    right: 4%;
+    top: 4%;
+}
+.box-7{
+    bottom: 4%;
+    left: 4%;
+}
+.box-8{
+    bottom: 4%;
+    right: 4%;
+}
+.box-9{
+    left: 40%;
+    top: -10%;
+}
+.box-10{
+    left: 40%;
+    bottom: -10%;
+}
+.box-11{
+    bottom: 40%;
+    left: -10%;
+}
+.box-12{
+    bottom: 40%;
+    right: -10%;
+}
+/* ========== skill div end =============== */
 .skills{
     height: 100vh;
 }
@@ -739,15 +848,4 @@ ul, li{
         height: 180px;
     }
 }
-.skill{
-    border: 1px solid red;
-    /* height: 100%; */
-}
-.boxes{
-    border: 1px solid red;
-    width: 300px;
-}
-table.boxes tr td{
-    border: 1px solid red;
-    text-align: center;
-}
+
