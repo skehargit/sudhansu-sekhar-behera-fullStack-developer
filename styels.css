@@ -171,12 +171,6 @@ section{
     width: 70%;
     height: 70%;
 }
-.home-img:hover .circle1{
-    animation: rotate 5s infinite linear;
-}
-.home-img:hover .circle1 span{
-    animation: childrorate 5s infinite linear;
-}
 .home-img .circle2{
     position: absolute;
     border: 1px solid rgb(255, 255, 255);
@@ -188,18 +182,12 @@ section{
     animation: childrorate 5s infinite linear;
 
 }
-.home-img:hover .circle2{
-    animation: childrorate 3s infinite linear;
-}
-/* .home-img .circle2:hover{
-    animation: childrorate 1s infinite linear;
-} */
 .home-img img{
     position: absolute;
     width: 330px;
     height: 330px;
     border-radius: 50%;
-    transition: all .5s;
+    transition: all .4s linear;
     
 }
 .home-img img:hover{
