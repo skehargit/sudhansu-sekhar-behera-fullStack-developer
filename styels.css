@@ -531,6 +531,7 @@ ul, li{
 .skill .box{
     border: 1px solid rgba(207, 207, 207, 0.206);
     padding: 10px;
+    text-transform: uppercase;
     font-family: sans-serif;
     border-radius: 50px;
 }
@@ -629,7 +630,17 @@ ul, li{
 }
 /* ========== skill div end =============== */
 .projects{
-    height: 100vh;
+    /* height: 100vh; */
+}
+.projects .project-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 15px;
+}
+.projects .project-box .probox{
+    border: 1px solid red;
+    height: 10rem;
+    /* border-radius: 2px; */
 }
 /* ============ responsive =============  */
 @media (max-width:1850px){
