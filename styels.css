@@ -632,12 +632,12 @@ ul, li{
 .projects{
     /* height: 100vh; */
 }
-.projects .project-box{
+.projects .all-pjt-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 15px;
 }
-.projects .project-box .probox{
+.projects .all-pjt-list .pjtbox{
     border: 1px solid red;
     height: 10rem;
     /* border-radius: 2px; */
