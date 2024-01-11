@@ -632,15 +632,21 @@ ul, li{
 .projects{
     /* height: 100vh; */
 }
-.projects .all-pjt-list{
+#all-pjt-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: 15px;
+    grid-auto-flow: column;
+    gap: 20px;
+    overflow-x: scroll;
+    padding: 10px;
 }
-.projects .all-pjt-list .pjtbox{
+#all-pjt-list .pjtbox{
     border: 1px solid red;
-    height: 10rem;
-    /* border-radius: 2px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* display: inline-block; */
+    height: 300px;
+    width: 300px;
 }
 /* ============ responsive =============  */
 @media (max-width:1850px){
