@@ -32,6 +32,9 @@ h2{
     text-transform: uppercase;
     padding: 10px 0;
 }
+/* section{
+    padding-top: 50px;
+} */
 header{
     position: fixed;
     border: 1px solid rgba(255, 255, 255, 0.299);
@@ -107,7 +110,7 @@ header ul li{
     list-style: none;
 }
 section{
-    padding: 0 15%;
+    padding: 50px 15%;
     /* overflow: hidden; */
 }
 .home{
