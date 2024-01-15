@@ -17,7 +17,7 @@ body{
     overflow-x: hidden;
 }
 body::-webkit-scrollbar {
-    width: 12px;
+    width: 5px;
     background: #2e2e2e;
 }
 body::-webkit-scrollbar-thumb {
@@ -681,14 +681,14 @@ ul, li{
     text-align: center;
 }
 #all-pjt-list::-webkit-scrollbar {
-    width: 12px;
+    width: 5px;
     background: #2e2e2e;
     border-radius: 20px;
 }
 #all-pjt-list::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.156);
     border-radius: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.156);
+    border: 1px solid rgba(255, 255, 255, 0.156);
 }
 /* ============ responsive =============  */
 @media (max-width:1850px){
