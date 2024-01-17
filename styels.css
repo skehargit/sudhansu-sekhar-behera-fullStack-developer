@@ -651,14 +651,12 @@ ul, li{
     align-items: center;
     justify-content: center;
     width: 100%;
-    /* border: 1px solid red; */
     margin-bottom: 5px;
 }
 .pjtbox-image img{
     width: 100%;
 }
 .pjtbox-data{
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -690,6 +688,7 @@ ul, li{
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.156);
 }
+/* =========== pjt sec end ================== */
 /* ============ responsive =============  */
 @media (max-width:1850px){
     section{
