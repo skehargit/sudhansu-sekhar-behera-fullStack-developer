@@ -708,6 +708,52 @@ ul, li{
     padding: 10px;
 }
 /* =========== pjt sec end ================== */
+#interest{
+    overflow: hidden;
+    
+}
+.infi-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    overflow: hidden;
+}
+.infi-text{
+    /* top: 0; */
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+}
+.infi-text-sp>p{
+    display: inline-block;
+    background: #2e2e2e;
+    /* border: 1px solid red; */
+    padding: 5px 10px;
+    text-transform:uppercase;
+    font-size: .7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+.infi-text2{
+    animation-delay: 10s;
+}
+.infi-text3{
+    animation-delay: 20s;
+}
+@keyframes marquee {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: -100%
+    }
+  }
 /* ============ responsive =============  */
 @media (max-width:1850px){
     section{
