@@ -716,7 +716,7 @@ ul, li{
     position: relative;
     display: flex;
     align-items: center;
-    height: 30px;
+    height: 50px;
     overflow: hidden;
 }
 .infi-text{
@@ -726,19 +726,26 @@ ul, li{
     overflow: hidden;
     position: absolute;
     white-space: nowrap;
-    animation: marquee 30s linear infinite;
+    animation: infiscroll 30s linear infinite;
+    /* border: 1px solid red; */
+    /* background: #2e2e2e;
+    border-radius: 10px; */
 }
 .infi-text-sp>p{
     display: inline-block;
     background: #2e2e2e;
     /* border: 1px solid red; */
-    padding: 5px 10px;
+    padding: 10px 10px;
     text-transform:uppercase;
     font-size: .7rem;
     font-weight: bold;
     letter-spacing: 1px;
     font-family: sans-serif;
-    border-radius: 10px;
+    border-radius: 50px;
+    transition: .5s;
+}
+.infi-text-sp>p:hover{
+    background: #2e2e2e72;
 }
 .infi-text2{
     animation-delay: 10s;
@@ -746,14 +753,31 @@ ul, li{
 .infi-text3{
     animation-delay: 20s;
 }
-@keyframes marquee {
+@keyframes infiscroll {
     0% {
       left: 100%;
     }
     100% {
       left: -100%
     }
-  }
+}
+footer{
+    background: #2e2e2e;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+footer a{
+    color: white;
+}
+footer>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
 /* ============ responsive =============  */
 @media (max-width:1850px){
     section{
