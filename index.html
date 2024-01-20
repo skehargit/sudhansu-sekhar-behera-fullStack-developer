@@ -17,14 +17,14 @@
     <!-- <div id="starting-animation"></div> -->
     <header>
         <ul class="navbar">
-            <li><a href="" class="active">home</a></li>
+            <li><a href="#home" class="active">home</a></li>
             <li><a href="#about">about</a></li>
-            <li><a href="">projects</a></li>
+            <li><a href="#projects">projects</a></li>
             <!-- <li><a href="">interest</a></li> -->
-            <li><a href="">contact</a></li>
+            <!-- <li><a href="">contact</a></li> -->
         </ul>
     </header>
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-text" data-aos="fade-right">
             <span class="hi-text">Hi<img src="img/hello-removebg-preview.png" alt="hello img" loading="lazy">, I am a</span>
             <h1>
@@ -86,7 +86,7 @@
 
     </section>
     <section class="about" id="about">
-        <div class="about-card" data-aos="fade-left">
+        <div class="about-card" data-aos="fade-up">
             <div class="about-card-img">
                 <img src="img/edit-1.jpg" alt="" loading="lazy">
                 <img src="img/edit-1.png" alt="" loading="lazy">
@@ -100,7 +100,7 @@
                 
             </div>
         </div>
-        <div class="about-content">
+        <div class="about-content" data-aos="fade-up">
             
             <div class="content-text">
                 <h2>about</h2>
@@ -111,7 +111,7 @@
             <!-- <div class="interests">
                 In my Free time I love to play ches & sudoku, edit photos In photoshop, Playing with css for new Design.
             </div> -->
-            <div class="education" data-aos="zoom-in">
+            <div class="education" >
                 <div class="wrapper">
                     <h2>Education</h2>
                     <ul class="sessions">
@@ -133,7 +133,7 @@
                   </div>
             </div>
         </div>
-        <div class="skill" data-aos="fade-right">
+        <div class="skill" data-aos="fade-up">
             <div class="box">
                 skills
             </div>
@@ -181,7 +181,7 @@
               
         </div>
     </section>
-    <section class="projects" data-aos="fade-up">
+    <section class="projects" id="projects" data-aos="fade-up">
         <h2 class="pjt-h2">my projects</h2>
         <div id="all-pjt-list">
             <div class="pjtbox">
@@ -386,7 +386,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-            offset: 350,
+            offset: 200,
             duration: 400,
         });
   
