@@ -854,6 +854,14 @@ footer>div{
     .about-card{
         margin-right: 0;
     }
+    footer{
+        height: fit-content;
+        flex-direction: column;
+        gap: 0;
+    }
+    footer>div{
+        padding: 10px;
+    }
 }
 @media (max-width:800px){
     .home-text h1 span{
