@@ -727,10 +727,13 @@ ul, li{
     display: flex;
 }
 .scroll>div{
-    font-family:Rubik Doodle Shadow,sans-serif;
+    /* font-family:Rubik Doodle Shadow,sans-serif; */
+    font-family: sans-serif;
+    font-weight: bold;
     white-space: nowrap;
     color: #2e2e2e;
     font-size: 4rem;
+    
     text-transform: uppercase;
     animation: animate var(--t) linear infinite;
     animation-delay: calc(var(--t)*-1);
@@ -739,6 +742,7 @@ ul, li{
 .scroll>div:nth-child(2){
     animation: animate2 var(--t) linear infinite;
    animation-delay: calc(var(--t)/-2);
+   /* border: 1px solid red; */
 }
 @keyframes animate{
     0%{
