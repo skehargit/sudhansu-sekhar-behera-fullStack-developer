@@ -761,6 +761,7 @@ ul, li{
 .scroll{
     width: 100%;
     display: flex;
+    -webkit-mask-image: linear-gradient(90deg,transparent,#fff 20%,#fff 80%,transparent);
 }
 .scroll>div{
     font-family: sans-serif;
